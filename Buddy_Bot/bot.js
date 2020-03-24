@@ -11,8 +11,15 @@ client.on('ready', () => {
 client.on('message', (message) => {
     console.log("A message was recived");
     // Check to make sure the message was not sent by a bot and that the messages started with the discriminator
-    if(message.author.bot && !message.content.startsWith(discriminator)) return; 
-    //Your code here
+    if(message.author.bot) return; 
+    
+    if(message.content === "Hello!"){
+        console.log("Hello was heard");
+        message.reply(`Hi, ${message.author.username}`); 
+    }else if(message.content === "Bob"){
+        message.reply("Well Bob's your uncle");
+    }
+    
 })
 
 //This line tells our bot to try and connect to the discord servers

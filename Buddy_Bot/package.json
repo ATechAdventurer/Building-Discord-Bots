@@ -1,0 +1,16 @@
+{
+  "name": "discordbot-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple boilerplate to quickly begin developing Discord Bots with Discord.JS ",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "author": "Cameron Steele (ATechAdventurer)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.0.2",
+    "dotenv": "^8.2.0"
+  }
+}
